@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "rates",
+  "info": {
+    "singularName": "rate",
+    "pluralName": "rates",
+    "displayName": "Rate",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "reported_at": {
+      "type": "datetime",
+      "required": true
+    },
+    "digital_opening": {
+      "type": "boolean",
+      "required": true
+    },
+    "entity_id": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::entity.entity"
+    },
+    "product_id": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::product.product"
+    },
+    "Product": {
+      "type": "dynamiczone",
+      "components": [
+        "product.credit-card",
+        "product.credits",
+        "product.deposit"
+      ],
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "collectionName": "credit_cards",
+  "info": {
+    "displayName": "CreditCard",
+    "icon": "pager",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "commercial_name": {
+      "type": "string",
+      "required": true,
+      "maxLength": 191
+    },
+    "unique_number_clients": {
+      "type": "biginteger",
+      "required": true
+    },
+    "handling_fee": {
+      "type": "biginteger",
+      "required": true
+    },
+    "fixed_cost": {
+      "type": "biginteger",
+      "required": true
+    },
+    "proportional_cost": {
+      "type": "float",
+      "required": true
+    },
+    "rate": {
+      "type": "biginteger",
+      "required": true
+    },
+    "population_group_id": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::population-group.population-group"
+    },
+    "target_consumer_income_id": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::target-consumer-income.target-consumer-income"
+    },
+    "transaction_or_service_id": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::transaction-or-service.transaction-or-service"
+    },
+    "channel_id": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::channel.channel"
+    },
+    "franchise_id": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::franchise.franchise"
+    },
+    "credit_card_target_quota_id": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::credit-card-target-quota.credit-card-target-quota"
+    },
+    "free_service_ids": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::free-service.free-service"
+    },
+    "insurance_carrier_id": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::insurance-carrier.insurance-carrier"
+    }
+  }
+}

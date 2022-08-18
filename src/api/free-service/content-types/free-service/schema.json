@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "free_services",
+  "info": {
+    "singularName": "free-service",
+    "pluralName": "free-services",
+    "displayName": "FreeService"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "maxLength": 191
+    }
+  }
+}

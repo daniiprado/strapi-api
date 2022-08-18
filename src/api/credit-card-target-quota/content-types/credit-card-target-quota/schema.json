@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "credit_card_target_quotas",
+  "info": {
+    "singularName": "credit-card-target-quota",
+    "pluralName": "credit-card-target-quotas",
+    "displayName": "CreditCardTargetQuota"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "maxLength": 191
+    }
+  }
+}

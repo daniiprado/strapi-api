@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_product_credits",
+  "info": {
+    "displayName": "Credits",
+    "icon": "coins"
+  },
+  "options": {},
+  "attributes": {
+    "rate": {
+      "type": "biginteger",
+      "required": true
+    },
+    "cost": {
+      "type": "biginteger",
+      "required": true
+    },
+    "insurance_carrier_id": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::insurance-carrier.insurance-carrier"
+    },
+    "credit_type_id": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::credit-type.credit-type"
+    }
+  }
+}

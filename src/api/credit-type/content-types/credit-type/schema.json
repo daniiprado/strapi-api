@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "credit_types",
+  "info": {
+    "singularName": "credit-type",
+    "pluralName": "credit-types",
+    "displayName": "CreditType"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "text",
+      "required": true
+    }
+  }
+}

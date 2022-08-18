@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "franchises",
+  "info": {
+    "singularName": "franchise",
+    "pluralName": "franchises",
+    "displayName": "Franchise"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "maxLength": 191
+    }
+  }
+}

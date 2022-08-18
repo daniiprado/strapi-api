@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "target_consumer_incomes",
+  "info": {
+    "singularName": "target-consumer-income",
+    "pluralName": "target-consumer-incomes",
+    "displayName": "TargetConsumerIncome"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "maxLength": 191
+    }
+  }
+}

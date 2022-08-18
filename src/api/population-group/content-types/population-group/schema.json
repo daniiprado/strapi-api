@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "population_groups",
+  "info": {
+    "singularName": "population-group",
+    "pluralName": "population-groups",
+    "displayName": "PopulationGroup",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "maxLength": 191
+    }
+  }
+}

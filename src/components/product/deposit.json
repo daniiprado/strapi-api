@@ -1,0 +1,71 @@
+{
+  "collectionName": "deposits",
+  "info": {
+    "displayName": "Deposit",
+    "icon": "archway",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "commercial_name": {
+      "type": "string",
+      "required": true,
+      "maxLength": 191
+    },
+    "unique_number_clients": {
+      "type": "biginteger",
+      "required": true
+    },
+    "handling_fee": {
+      "type": "biginteger",
+      "required": true
+    },
+    "fixed_cost": {
+      "type": "biginteger",
+      "required": true
+    },
+    "proportional_cost": {
+      "type": "float",
+      "required": true
+    },
+    "included_transactions": {
+      "type": "integer",
+      "required": true
+    },
+    "population_group_id": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::population-group.population-group"
+    },
+    "target_consumer_income_id": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::target-consumer-income.target-consumer-income"
+    },
+    "transaction_or_service_id": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::transaction-or-service.transaction-or-service"
+    },
+    "channel_id": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::channel.channel"
+    },
+    "debit_card_free_services_id": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::free-service.free-service"
+    },
+    "savings_account_free_services_id": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::free-service.free-service"
+    },
+    "product_type_id": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::product-type.product-type"
+    }
+  }
+}

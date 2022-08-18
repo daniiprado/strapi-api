@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "entity_types",
+  "info": {
+    "singularName": "entity-type",
+    "pluralName": "entity-types",
+    "displayName": "EntityType",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "maxLength": 255
+    }
+  }
+}
