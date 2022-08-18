@@ -17,6 +17,7 @@
     "@strapi/strapi": "4.3.4",
     "monaco-editor-webpack-plugin": "^7.0.1",
     "pg": "8.6.0",
+    "pg-connection-string": "^2.5.0",
     "strapi-plugin-entity-relationship-chart": "^4.1.0",
     "strapi-plugin-import-export-entries": "^1.12.0",
     "strapi-plugin-populate-deep": "^0.1.2"
