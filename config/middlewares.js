@@ -10,5 +10,5 @@ module.exports = [
   'strapi::favicon',
   'strapi::public',
   // custom name to find a package or a path
-  // 'global::log'
+  'global::log'
 ];

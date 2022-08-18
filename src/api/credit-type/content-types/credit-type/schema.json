@@ -4,7 +4,8 @@
   "info": {
     "singularName": "credit-type",
     "pluralName": "credit-types",
-    "displayName": "CreditType"
+    "displayName": "CreditType",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -12,8 +13,9 @@
   "pluginOptions": {},
   "attributes": {
     "name": {
-      "type": "text",
-      "required": true
+      "type": "string",
+      "required": true,
+      "maxLength": 255
     }
   }
 }
